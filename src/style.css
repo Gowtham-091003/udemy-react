@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+  font-family: "Gabarito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+   padding: 5px;
+   border-bottom: 1px solid black;
+   gap: 10px;
+   justify-content: center;
+   align-items: center;
+   position: sticky;
+   top: 0px;
+   background-color: white;
+    z-index: 1;
+}
+#navbar__s1__title{
+    color: #A435F8;
+    font-size: 20px;
+}
+#navbar__s2{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+#navbar__s2>input{
+    border: none;
+    font-size: 16px;
+    width: 100%
+
+}
+#navbar__s2>input:focus{
+    outline: none;
+}
+#navbar__s3{
+    display: flex;
+    justify-content: space-evenly;
+}
+#mylearning{
+    position: relative;
+    cursor: pointer;
+}
+#mylearning__popup{
+    position: absolute;
+    border: solid black 1px;
+    background-color: white;
+    padding: 10px;
+    width: 85px;
+    right: 0px;
+    top: 20px;
+    display: none;
+}
+#mylearning:hover #mylearning__popup{
+    display: block;
+}
+#categories{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+    margin: 4px;
+    
+}
+#categories p{
+    background-color: #A435F8;
+    color: white;
+   padding: 7px;
+    border-radius: 30px;
+    margin: 4px;
+  
+}
+#saleimage img{
+    width: 100%;
+}
+#saleimage{
+      position: relative;
+}
+#saleimage__offer{
+    border: 1px solid black;
+    height: 100px;
+    width: 380px;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+#recommended{
+    padding: 10px;
+    
+   
+}
+#recommended__container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+
+}
+.course{
+    width: 20%;
+    
+}
+.course img{
+    width: 100%;
+    height: 110px;
+    border-radius: 5px;
+}
+#topicsrecommended{
+    padding: 10px;
+}
+#topicrecommended__name{
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    
+    
+}
+
+#topicrecommended__name p{
+    border: 2px solid grey;
+    flex-grow: 1;
+    flex-basis: 20%;
+    padding: 5px;
+}
+#topicrecommended__name p:hover{
+    background-color: grey;
+}
+#popular{
+    margin: 5px;
+}
+#popular__container{
+    display: flex;
+    justify-content: space-between;
+    margin: 7px;
+}
+.mostpopular{
+    width: 20%;
+}
+.mostpopular img{
+    width: 100%;
+    height: 110px;
+    border-radius: 7px;
+}
+.mostpopular h4{
+    font-size: 13px;
+}
+#footer{
+    background-color: black;
+    color: white;
+    margin-top: 35px;height: 100%;
+    padding: 10px;
+
+}
+#footer__container1{
+    /* margin: 10px; */
+    display: flex;
+    gap: 20px;
+}
+#footer__container1 p{
+    margin: 15px;
+}
+
+#footer__container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-top: 20px;
+
+}
+
+@media screen and (max-width:600px) {
+    body{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:600px) {
+    #categories{
+        display: none;
+    }
+}
+@media screen and (max-width:600px) {
+    #mylearning{
+        display: none;
+    }
+    #navbar__s3>p{
+        display: none;
+    }
+    #navbar__s3 i{
+        display: none;
+    }
+    #navbar__s2{
+        display: none;
+    }
+}
+
+
+
+
+
